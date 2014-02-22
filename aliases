@@ -1,0 +1,36 @@
+# Unix
+alias mkdir='mkdir -p'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# Bundler
+alias b="bundle"
+
+# Rubygems
+alias gi="gem install"
+alias giv="gem install -v"
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias m="migrate"
+
+alias vi='vim'
+alias powr='touch ~/.pow/restart.txt'
+alias js='jekyll server --watch'
+alias cdgems='cd ~/.rbenv/versions/`rbenv version | cut -f 1 -d " "`/lib/ruby/gems/*/gems'
+alias ga='git add --all'
+alias gc='git commit'
+alias gd='git diff'
+alias gl='git log'
+alias gs='git show'
+alias gb='git branch'
+alias gbd='git branch -d'
+alias gdh='git diff HEAD'
+alias gri='git rebase -i'
