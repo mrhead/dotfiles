@@ -34,3 +34,5 @@ alias gb='git branch'
 alias gbd='git branch -d'
 alias gdh='git diff HEAD'
 alias gri='git rebase -i'
+
+alias rr='rake routes'
