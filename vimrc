@@ -147,3 +147,7 @@ imap <silent> <F11> <ESC><F11>
 
 " dependency for textobject ruby block
 runtime macros/matchit.vim
+
+" pathogen is needed to automatically execute non vundle plugins (i18n for
+" example)
+execute pathogen#infect()
