@@ -36,3 +36,4 @@ alias gdh='git diff HEAD'
 alias gri='git rebase -i'
 
 alias rr='rake routes'
+alias rc='rails console'
