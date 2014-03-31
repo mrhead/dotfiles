@@ -37,3 +37,4 @@ alias gri='git rebase -i'
 
 alias rr='rake routes'
 alias rc='rails console'
+alias i18n:sort='rake i18n:sort'
