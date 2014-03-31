@@ -34,6 +34,7 @@ alias gb='git branch'
 alias gbd='git branch -d'
 alias gdh='git diff HEAD'
 alias gri='git rebase -i'
+alias grs="git reset --soft 'HEAD^1'; git reset"
 
 alias rr='rake routes'
 alias rc='rails console'
