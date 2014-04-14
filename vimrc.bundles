@@ -28,5 +28,6 @@ Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-surround'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
+Bundle 'slim-template/vim-slim.git'
 
 filetype on
