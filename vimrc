@@ -70,9 +70,6 @@ set number
 set numberwidth=5
 set relativenumber
 
-" Snippets are activated by Shift+Tab
-let g:snippetsEmu_key = "<S-Tab>"
-
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
@@ -87,6 +84,9 @@ function! InsertTabWrapper()
     endif
 endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
+
+imap <S-Tab> <Plug>snipMateNextOrTrigger
+smap <S-Tab> <Plug>snipMateNextOrTrigger
 
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
