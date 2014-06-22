@@ -21,6 +21,9 @@ alias giv="gem install -v"
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias m="migrate"
 
+# heroku
+alias hc='heroku run console'
+
 alias vi='vim'
 alias powr='touch ~/.pow/restart.txt'
 alias js='jekyll server --watch'
@@ -29,6 +32,7 @@ alias ga='git add --all'
 alias gb='git branch'
 alias gbd='git branch -d'
 alias gc='git commit'
+alias gcw='ga; git commit -m wip'
 alias gcb='git co -b'
 alias gd='git diff'
 alias gdh='git diff HEAD'
