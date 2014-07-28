@@ -47,5 +47,6 @@ alias gs='git show'
 alias rr='rake routes'
 alias rc='rails console'
 alias i18n:sort='rake i18n:sort'
+alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 
 alias t='tmux'
