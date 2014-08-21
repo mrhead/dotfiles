@@ -50,3 +50,4 @@ alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 
 alias t='tmux'
+alias kill_rspec="ps -ef | grep bin/rspec | grep ruby | awk '{print $2}' | xargs kill"
