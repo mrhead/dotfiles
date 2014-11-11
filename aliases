@@ -23,6 +23,7 @@ alias m="migrate"
 
 # heroku
 alias hc='heroku run console'
+alias hrr='heroku run rake'
 
 alias vi='vim'
 alias powr='touch ~/.pow/restart.txt'
