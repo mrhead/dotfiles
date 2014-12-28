@@ -103,14 +103,10 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" vim-vroom (test runner) settings
-let g:vroom_map_keys = 0
-let g:vroom_use_colors = 1
-let g:vroom_use_spring = 1
-let g:vroom_test_unit_command = 'rake test'
-nnoremap <Leader>t :VroomRunTestFile<CR>
-nnoremap <Leader>s :VroomRunNearestTest<CR>
-nnoremap <Leader>l :VroomRunLastTest<CR>
+" vim-rspec mappings
+nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>s :call RunNearestSpec()<CR>
+nnoremap <Leader>l :call RunLastSpec()<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 " TODO fix this, it is not working correctly
@@ -135,6 +131,8 @@ set smartcase
 
 " use ack instead of grep
 set grepprg=ack
+
+map <Leader>a :call RunAllSpecs()<CR>
 
 if filereadable($HOME . "/.vim/vividchalk.vim")
   source ~/.vim/vividchalk.vim
