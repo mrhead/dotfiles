@@ -55,3 +55,4 @@ alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 alias t='tmux'
 alias kill_rspec="ps -ef | grep bin/rspec | grep ruby | awk '{print $2}' | xargs kill"
 alias ws='python -m SimpleHTTPServer'
+alias grep='grep --color=auto'
