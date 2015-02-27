@@ -45,14 +45,18 @@ alias gri='git rebase -i'
 alias grc='git rebase --continue'
 alias grs="git reset --soft 'HEAD^1'; git reset"
 alias gs='git show'
+alias co='git co'
 
 alias rr='rake routes'
 alias rrg='rake routes | grep'
 alias rc='rails console'
 alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
+alias start_resque='COUNT=1 QUEUE=* bundle exec rake resque:workers'
 
 alias t='tmux'
 alias kill_rspec="ps -ef | grep bin/rspec | grep ruby | awk '{print $2}' | xargs kill"
 alias ws='python -m SimpleHTTPServer'
 alias grep='grep --color=auto'
+alias dump_db='pg_dump -c `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` > db.dump'
+alias restore_db='psql `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` < db.dump'
