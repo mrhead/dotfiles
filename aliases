@@ -10,6 +10,7 @@ alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
+alias .='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
