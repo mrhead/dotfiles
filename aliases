@@ -10,6 +10,20 @@ alias -g ONE="| awk '{ print \$1}'"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias -- -='cd -'
+alias dt='cd ~/Desktop'
+
+# IP addresses
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip='myip'
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
 # Bundler
 alias b="bundle"
 
@@ -61,3 +75,17 @@ alias ws='python -m SimpleHTTPServer'
 alias grep='grep --color=auto'
 alias dump_db='pg_dump -c `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` > db.dump'
 alias restore_db='psql `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` < db.dump'
+
+# Vagrant
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vs='vagrant ssh'
+
+# format JSON
+alias json='python -mjson.tool'
+
+# Perform GET, POST... requests
+# Example: GET google.com
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+  alias "$method"="lwp-request -m '$method'"
+done
