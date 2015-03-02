@@ -17,7 +17,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias -- -='cd -'
-alias dt='cd ~/Desktop'
+alias cdt='cd ~/Desktop'
 
 # IP addresses
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
