@@ -61,12 +61,6 @@ setopt cdablevars
 # Enable extended globbing
 setopt EXTENDED_GLOB
 
-# aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
-
-# private aliases - not included git repo
-[[ -f ~/.private_aliases ]] && source ~/.private_aliases
-
 # unsetopt CORRECT CORRECT_ALL
 
 # recommended by brew doctor
