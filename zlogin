@@ -6,6 +6,16 @@ git_prompt_info() {
   fi
 }
 
+prompt() {
+  if [ $? != 0 ]; then
+    LAST_COMMAND_STATUS="%{$fg_bold[red]%}!%{$reset_color%}"
+  else
+    LAST_COMMAND_STATUS=''
+  fi
+
+  echo "$(git_prompt_info)[%{$fg_bold[blue]%}%~%{$reset_color%}]$LAST_COMMAND_STATUS "
+}
+
 # makes color constants available
 autoload -U colors
 colors
@@ -17,7 +27,7 @@ export CLICOLOR=1
 setopt prompt_subst
 
 # prompt
-export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%~%{$reset_color%}] '
+export PS1='$(prompt)'
 
 # load thoughtbot/dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
