@@ -45,6 +45,9 @@ setopt histignoredups
 
 # keep TONS of history
 export HISTSIZE=4096
+export SAVEHIST=4096
+export HISTFILE=~/.history
+setopt SHARE_HISTORY
 
 # look for ey config in project dirs
 export EYRC=./.eyrc
