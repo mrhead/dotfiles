@@ -69,4 +69,8 @@ setopt EXTENDED_GLOB
 # recommended by brew doctor
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/head/bin:/Applications/LibreOffice 2.app/Contents/MacOS"
 
+# setup rbenv
 eval "$(rbenv init -)"
+
+# enable comments in command line
+setopt interactivecomments
