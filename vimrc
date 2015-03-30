@@ -154,3 +154,6 @@ execute pathogen#infect()
 
 " make backspace to work as in other apps
 set backspace=indent,eol,start
+
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
