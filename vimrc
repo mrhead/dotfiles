@@ -138,13 +138,6 @@ if filereadable($HOME . "/.vim/vividchalk.vim")
   source ~/.vim/vividchalk.vim
 endif
 
-map <silent> <F10> !xmpfilter -a<cr>
-nmap <silent> <F10> V<F10>
-imap <silent> <F10> <ESC><F10>a
-
-nmap <silent> <F11> mzggVG!xmpfilter -a<cr>'z
-imap <silent> <F11> <ESC><F11>
-
 " dependency for textobject ruby block
 runtime macros/matchit.vim
 
