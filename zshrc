@@ -74,3 +74,6 @@ eval "$(rbenv init -)"
 
 # enable comments in command line
 setopt interactivecomments
+
+# do not catch ctrl+s
+stty -ixon

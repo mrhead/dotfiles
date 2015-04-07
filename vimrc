@@ -171,3 +171,6 @@ iabbrev scenarion scenario
 " easily move to the beginning/end of the line
 nnoremap H ^
 nnoremap L $
+
+" turn spelling on/off
+nnoremap <C-S> :set spell! spelllang=en_us<cr>
