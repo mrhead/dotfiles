@@ -160,3 +160,9 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " run actual ruby file
 map <Leader>r :!ruby %<CR>
+
+" uppercase current word in insert mode
+imap <c-u> <esc>ebviwUi
+
+" uppercase the current word in normal mode
+nmap <c-u> viwU
