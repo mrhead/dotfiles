@@ -167,3 +167,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>R :source $MYVIMRC<cr>
 
 iabbrev scenarion scenario
+
+" easily move to the beginning/end of the line
+nnoremap H ^
+nnoremap L $
