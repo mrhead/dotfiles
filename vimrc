@@ -159,3 +159,9 @@ inoremap <c-u> <esc>ebviwUi
 
 " uppercase the current word in normal mode
 nnoremap <c-u> viwU
+
+" easily edit vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" source vimrc
+nnoremap <leader>R :source $MYVIMRC<cr>
