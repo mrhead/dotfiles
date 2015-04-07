@@ -165,3 +165,5 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " source vimrc
 nnoremap <leader>R :source $MYVIMRC<cr>
+
+iabbrev scenarion scenario
