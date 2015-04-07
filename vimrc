@@ -157,3 +157,6 @@ set backspace=indent,eol,start
 
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
+" run actual ruby file
+map <Leader>r :!ruby %<CR>
