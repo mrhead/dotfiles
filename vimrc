@@ -159,10 +159,10 @@ set backspace=indent,eol,start
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
 " run actual ruby file
-map <Leader>r :!ruby %<CR>
+noremap <Leader>r :!ruby %<CR>
 
 " uppercase current word in insert mode
-imap <c-u> <esc>ebviwUi
+inoremap <c-u> <esc>ebviwUi
 
 " uppercase the current word in normal mode
-nmap <c-u> viwU
+nnoremap <c-u> viwU
