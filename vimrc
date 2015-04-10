@@ -107,6 +107,7 @@ nnoremap <Down> :echoe "Use j"<CR>
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
+nnoremap <Leader>a :call RunAllSpecs()<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 " TODO fix this, it is not working correctly
@@ -131,8 +132,6 @@ set smartcase
 
 " use ack instead of grep
 set grepprg=ack
-
-map <Leader>a :call RunAllSpecs()<CR>
 
 if filereadable($HOME . "/.vim/vividchalk.vim")
   source ~/.vim/vividchalk.vim
