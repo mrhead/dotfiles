@@ -182,3 +182,6 @@ vnoremap <leader>c "*y
 
 " use very magic mode for search
 nnoremap / /\v
+
+" turn of search highlight
+nnoremap <leader>nh :nohlsearch<cr>
