@@ -185,3 +185,6 @@ nnoremap / /\v
 
 " turn of search highlight
 nnoremap <leader>nh :nohlsearch<cr>
+
+" grep current WORD
+nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
