@@ -180,9 +180,6 @@ nnoremap <leader>p "*p
 " easily copy to OS clipboard
 vnoremap <leader>c "*y
 
-" use very magic mode for search
-nnoremap / /\v
-
 " turn of search highlight
 nnoremap <leader>nh :nohlsearch<cr>
 
