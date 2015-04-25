@@ -185,3 +185,6 @@ nnoremap <leader>nh :nohlsearch<cr>
 
 " grep current WORD
 nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) . " ."<cr>:copen<cr>
+
+" easily highlight some keyword
+nnoremap <leader>m :match Keyword 
