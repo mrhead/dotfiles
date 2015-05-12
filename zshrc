@@ -47,6 +47,8 @@ setopt histignoredups
 export HISTSIZE=4096
 export SAVEHIST=4096
 export HISTFILE=~/.history
+
+# share history between simultaneous shells
 setopt SHARE_HISTORY
 
 # do not store space ' ' prefixed commands in history
