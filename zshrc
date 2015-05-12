@@ -49,6 +49,9 @@ export SAVEHIST=4096
 export HISTFILE=~/.history
 setopt SHARE_HISTORY
 
+# do not store space ' ' prefixed commands in history
+setopt HIST_IGNORE_SPACE
+
 # look for ey config in project dirs
 export EYRC=./.eyrc
 
