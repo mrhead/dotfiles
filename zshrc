@@ -82,3 +82,8 @@ setopt interactivecomments
 
 # do not catch ctrl+s
 stty -ixon
+
+# edit command in vim by hitting ESC+v
+autoload edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
