@@ -33,8 +33,7 @@ alias gi="gem install"
 alias giv="gem install -v"
 
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias m="migrate"
+alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 
 # heroku
 alias hc='heroku run console'
