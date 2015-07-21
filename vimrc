@@ -103,11 +103,12 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
-" vim-rspec mappings
-nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
-nnoremap <Leader>s :call RunNearestSpec()<CR>
-nnoremap <Leader>l :call RunLastSpec()<CR>
-nnoremap <Leader>a :call RunAllSpecs()<CR>
+" vim-test mappings
+nnoremap <Leader>t :TestFile<CR>
+nnoremap <Leader>s :TestNearest<CR>
+nnoremap <Leader>l :TestLast<CR>
+nnoremap <Leader>a :TestSuite<CR>
+nnoremap <Leader>L :TestVisit<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 " TODO fix this, it is not working correctly
