@@ -192,3 +192,6 @@ nnoremap <leader>m :match Keyword
 
 " open tag in new tab
 nnoremap <leader><C-]> <C-w><C-]><C-w>T
+
+" create new directory and save file
+nnoremap <leader>w :!mkdir -p %:h<cr>:w<cr>
