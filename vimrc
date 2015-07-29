@@ -189,3 +189,6 @@ nnoremap <leader>g :silent execute "grep! -R " . shellescape(expand("<cWORD>")) 
 
 " easily highlight some keyword
 nnoremap <leader>m :match Keyword 
+
+" open tag in new tab
+nnoremap <leader><C-]> <C-w><C-]><C-w>T
