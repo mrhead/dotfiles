@@ -176,7 +176,7 @@ nnoremap L $
 nnoremap <C-S> :set spell! spelllang=en_us<cr>
 
 " easily paste from OS clipboard
-nnoremap <leader>p "*p
+nnoremap <leader>p o<esc>"*p
 
 " easily copy to OS clipboard
 vnoremap <leader>c "*y
