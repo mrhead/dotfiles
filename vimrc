@@ -195,3 +195,6 @@ nnoremap <leader><C-]> <C-w><C-]><C-w>T
 
 " create new directory and save file
 nnoremap <leader>w :!mkdir -p %:h<cr>:w<cr>
+
+" format json
+nnoremap <leader>j va{:!json<cr>
