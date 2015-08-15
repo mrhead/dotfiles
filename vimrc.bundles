@@ -30,5 +30,6 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'janko-m/vim-test'
+Plugin 'pangloss/vim-javascript'
 
 filetype on
