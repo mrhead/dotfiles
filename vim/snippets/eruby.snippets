@@ -9,5 +9,12 @@ snippet tf
 		<%= f.text_field :$1, class: 'form-control' %>
 	</div>
 
+snippet checkbox
+	<div class="checkbox">
+		<%= f.label :${1:checkbox_name} do %>
+		  <%= f.check_box :$1 %> ${2:Label name}
+		<% end %>
+	</div>
+
 snippet submit
 	<%= f.submit ${0}class: 'btn btn-primary' %>
