@@ -22,6 +22,8 @@
   path = .gitconfig.local
 [init]
   templatedir = ~/.git_template
+[merge]
+  renamelimit = 2000
 [pager]
   log = diff-highlight | less
   show = diff-highlight | less
