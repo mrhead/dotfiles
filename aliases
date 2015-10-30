@@ -74,7 +74,8 @@ alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 alias start_resque='COUNT=1 QUEUE=* bundle exec rake resque:workers'
 
-alias t='tmux'
+alias tmux="tmux -2"
+alias t="tmux"
 alias kill_rspec="ps -ef | grep \"[r]spec\" | grep ruby | awk '{print \$2}' | xargs kill"
 alias ws='python -m SimpleHTTPServer'
 alias grep='grep --color=auto'
