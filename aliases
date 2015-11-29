@@ -73,6 +73,7 @@ alias rc='rails console'
 alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 alias start_resque='COUNT=1 QUEUE=* bundle exec rake resque:workers'
+alias db:reset="powr && rake db:reset"
 
 alias tmux="tmux -2"
 alias t="tmux"
