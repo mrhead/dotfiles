@@ -44,8 +44,8 @@ export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 setopt histignoredups
 
 # keep TONS of history
-export HISTSIZE=4096
-export SAVEHIST=4096
+export HISTSIZE=10000
+export SAVEHIST=10000
 export HISTFILE=~/.history
 
 # share history between simultaneous shells
