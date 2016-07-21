@@ -74,6 +74,7 @@ alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 alias start_resque='COUNT=1 QUEUE=* bundle exec rake resque:workers'
 alias dbr="powr && rake db:reset"
+alias tdl="tail -f log/development.log"
 
 alias tmux="tmux -2"
 alias t="tmux"
