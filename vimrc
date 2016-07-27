@@ -198,3 +198,6 @@ nnoremap <leader>w :!mkdir -p %:h<cr>:w<cr>
 
 " format json
 nnoremap <leader>j va{:!json<cr>
+
+" bind <ctrl-p> to FZF
+nnoremap <C-p> :FZF<cr>
