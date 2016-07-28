@@ -18,6 +18,7 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias -- -='cd -'
 alias cdt='cd ~/Desktop'
+alias cdm='cd ~/ruby/memberful'
 
 # IP addresses
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -39,10 +40,9 @@ alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias hc='heroku run console'
 alias hrr='heroku run rake'
 
-alias vi='vim'
+alias v='vim'
+alias vi='echo "Use v!"'
 alias powr='touch ~/.pow/restart.txt'
-alias js='jekyll server --watch'
-alias cdgems='cd ~/.rbenv/versions/`rbenv version | cut -f 1 -d " "`/lib/ruby/gems/*/gems'
 
 # git
 alias co='git co'
@@ -50,7 +50,6 @@ alias com='git co master'
 alias cob='git checkout $(git branch | cut -c 3- | pick)'
 alias ga='git add --all'
 alias gb='git branch'
-alias gbd='git branch -d'
 alias gc='git commit'
 alias gcb='git co -b'
 alias gcw='ga; git commit -m "wip - do not merge"'
