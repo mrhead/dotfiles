@@ -42,7 +42,8 @@ alias hrr='heroku run rake'
 
 alias v='vim'
 alias vi='echo "Use v!"'
-alias powr='touch ~/.pow/restart.txt'
+# alias powr='touch ~/.pow/restart.txt'
+alias powr='pkill -USR1 puma-dev'
 
 # git
 alias co='git co'
