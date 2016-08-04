@@ -7,8 +7,6 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
-alias e="$EDITOR"
-alias v="$VISUAL"
 
 alias .='clear'
 alias ..='cd ..'
@@ -72,14 +70,12 @@ alias rrg='rake routes | grep'
 alias rc='rails console'
 alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
-alias start_resque='COUNT=1 QUEUE=* bundle exec rake resque:workers'
 alias dbr="powr && rake db:reset"
 alias tdl="tail -f log/development.log"
 
 alias tmux="tmux -2"
 alias t="tmux"
 alias kill_rspec="ps -ef | grep \"[r]spec\" | grep ruby | awk '{print \$2}' | xargs kill"
-alias ws='python -m SimpleHTTPServer'
 alias grep='grep --color=auto'
 alias dump_db='pg_dump -c `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` > db.dump'
 alias restore_db='psql `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` < db.dump'
@@ -97,8 +93,3 @@ alias json='python -mjson.tool'
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
-
-# middleman
-alias mm="middleman"
-alias mma="mm article"
-alias mmd="mm deploy"
