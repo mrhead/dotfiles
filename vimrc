@@ -201,3 +201,6 @@ nnoremap <leader>j va{:!json<cr>
 
 " bind <ctrl-p> to FZF
 nnoremap <C-p> :FZF<cr>
+
+" speedup ruby.vim loading
+let g:ruby_path = system('echo $HOME/.rbenv/shims')
