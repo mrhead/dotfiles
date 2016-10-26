@@ -1,3 +1,16 @@
+snippet ft
+	<%= form_tag ${1:url}, method: ${2::post} do |f| %>
+		${0}
+	<% end %>
+
+snippet tft
+	<div class="form-group">
+		<%= text_field_tag :${1:field_name}, ${2:nil}, class: "form-control" %>
+	</div>
+
+snippet submit_tag
+	<%= submit "${1:submit}", class: "btn btn-primary" %>
+
 snippet ff
 	<%= form_for ${1:model} do |f| %>
 		${0}
