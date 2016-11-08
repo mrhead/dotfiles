@@ -27,6 +27,12 @@ snippet tfl
 		<%= f.text_field :$1, class: "form-control" %>
 	</div>
 
+snippet tal
+	<div class="form-group">
+		<%= f.label :${1:field_name} %>
+		<%= f.text_area :$1, class: "form-control" %>
+	</div>
+
 snippet checkbox
 	<div class="checkbox">
 		<%= f.label :${1:checkbox_name} do %>
