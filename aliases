@@ -39,7 +39,7 @@ alias hc='heroku run console'
 alias hrr='heroku run rake'
 
 alias v='vim'
-alias vi='echo "Use v!"'
+alias vi='vim'
 # alias powr='touch ~/.pow/restart.txt'
 alias powr='pkill -USR1 puma-dev'
 
