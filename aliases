@@ -72,6 +72,7 @@ alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 alias dbr="powr && rake db:reset"
 alias tdl="tail -f log/development.log"
+alias ttl="tail -f log/test.log"
 
 alias tmux="tmux -2"
 alias t="tmux"
