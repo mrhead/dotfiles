@@ -1,2 +1,3 @@
 --ignore-dir=log
 --ignore-dir=tmp
+--ignore-dir=public/packs-test
