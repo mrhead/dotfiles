@@ -94,3 +94,4 @@ alias json='python -mjson.tool'
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
+alias headers="curl -v -o /dev/null"
