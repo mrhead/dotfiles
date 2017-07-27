@@ -16,29 +16,34 @@ snippet ff
 		${0}
 	<% end %>
 
+snippet fw
+	<%= form_with model: ${1:model} do |form| %>
+		${0}
+	<% end %>
+
 snippet tf
 	<div class="form-group">
-		<%= f.text_field :${1:field_name}, class: "form-control" %>
+		<%= form.text_field :${1:field_name}, class: "form-control" %>
 	</div>
 
 snippet tfl
 	<div class="form-group">
-		<%= f.label :${1:field_name} %>
-		<%= f.text_field :$1, class: "form-control" %>
+		<%= form.label :${1:field_name} %>
+		<%= form.text_field :$1, class: "form-control" %>
 	</div>
 
 snippet tal
 	<div class="form-group">
-		<%= f.label :${1:field_name} %>
-		<%= f.text_area :$1, class: "form-control" %>
+		<%= form.label :${1:field_name} %>
+		<%= form.text_area :$1, class: "form-control" %>
 	</div>
 
 snippet checkbox
 	<div class="checkbox">
-		<%= f.label :${1:checkbox_name} do %>
-		  <%= f.check_box :$1 %> ${2:Label name}
+		<%= form.label :${1:checkbox_name} do %>
+		  <%= form.check_box :$1 %> ${2:Label name}
 		<% end %>
 	</div>
 
 snippet submit
-	<%= f.submit ${0}class: "btn btn-primary" %>
+	<%= form.submit ${0}class: "btn btn-primary" %>
