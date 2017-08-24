@@ -198,3 +198,9 @@ nnoremap <C-p> :FZF<cr>
 
 " speedup ruby.vim loading
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
+
+" vim 8 scrolling is super slow with `set relativenumber`. At least for Ruby
+" files. It works pretty well on vim 7.4 (default in OS X), but 7.4 is missing
+" some features which I use. Setting lazyredraw helps a little bit and it
+" makes scrolling faster.
+set lazyredraw
