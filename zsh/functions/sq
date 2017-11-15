@@ -1,0 +1,4 @@
+# squash last two commits
+sq() {
+  GIT_SEQUENCE_EDITOR="sed -i -e '2,\$s/pick/fixup/'" git rebase -i HEAD~2
+}
