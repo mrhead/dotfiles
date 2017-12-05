@@ -64,7 +64,7 @@ highlight Folded  guibg=#0A0A0A guifg=#9090D0
 " Numbers
 set number
 set numberwidth=5
-set relativenumber
+" set relativenumber
 
 " Tab completion
 " will insert tab at beginning of line,
