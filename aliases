@@ -15,8 +15,9 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias -- -='cd -'
-alias cdt='cd ~/Desktop'
 alias cdm='cd ~/ruby/memberful'
+alias cdr='cd ~/ruby'
+alias cdt='cd ~/Desktop'
 
 # IP addresses
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
