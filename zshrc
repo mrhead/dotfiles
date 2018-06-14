@@ -69,11 +69,6 @@ setopt cdablevars
 # Enable extended globbing
 setopt EXTENDED_GLOB
 
-# unsetopt CORRECT CORRECT_ALL
-
-# recommended by brew doctor
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/head/bin:/Applications/LibreOffice 2.app/Contents/MacOS:cli/bin"
-
 # setup rbenv
 eval "$(rbenv init -)"
 
