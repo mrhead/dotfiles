@@ -34,12 +34,6 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
-# expand functions in the prompt
-setopt prompt_subst
-
-# prompt
-export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
-
 # ignore duplicate history entries
 setopt histignoredups
 
@@ -53,18 +47,6 @@ setopt SHARE_HISTORY
 
 # do not store space ' ' prefixed commands in history
 setopt HIST_IGNORE_SPACE
-
-# look for ey config in project dirs
-export EYRC=./.eyrc
-
-# automatically pushd
-setopt auto_pushd
-export dirstacksize=5
-
-# awesome cd movements from zshkit
-setopt AUTOCD
-setopt AUTOPUSHD PUSHDMINUS PUSHDSILENT PUSHDTOHOME
-setopt cdablevars
 
 # Enable extended globbing
 setopt EXTENDED_GLOB
