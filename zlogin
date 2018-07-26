@@ -31,3 +31,6 @@ export PS1='$(prompt)'
 
 # load thoughtbot/dotfiles scripts
 export PATH="$HOME/.bin:$PATH"
+
+# load Memberful CLI
+export PATH=$PATH:/Users/head/ruby/memberful/cli/bin
