@@ -106,9 +106,8 @@ nnoremap <Leader>l :TestLast<CR>
 nnoremap <Leader>a :TestSuite<CR>
 nnoremap <Leader>L :TestVisit<CR>
 
-" Treat <li> and <p> tags like the block tags they are
-" TODO fix this, it is not working correctly
-let g:html_indent_tags = 'li\|p'
+" Correctly indent p tags
+let g:html_indent_inctags = "p"
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
