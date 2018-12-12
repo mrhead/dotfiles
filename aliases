@@ -104,3 +104,6 @@ alias headers="curl -v -o /dev/null"
 alias mf="memberful"
 alias mfp="memberful production"
 alias mfs="memberful staging"
+
+# Simple web server
+alias ws='python -m SimpleHTTPServer'
