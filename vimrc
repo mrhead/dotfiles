@@ -107,7 +107,7 @@ nnoremap <Leader>a :TestSuite<CR>
 nnoremap <Leader>L :TestVisit<CR>
 
 " Correctly indent p tags
-let g:html_indent_inctags = "p,hgroup"
+let g:html_indent_inctags = "p,hgroup,dd"
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
