@@ -67,8 +67,15 @@ alias gri='git rebase -i'
 alias grs="git reset --soft 'HEAD^1'; git reset"
 alias gs='git show'
 alias delete_merged_branches='git branch --merged | grep -v "\*" | grep -v "master" | xargs git branch -d'
-alias short='git rev-parse --short ' # convert long sha to a short one
 
+# Convert long SHA into a short one.
+alias short='git rev-parse --short '
+
+# Create pull request description based on commit messages.
+alias pr='git log --format="* %h **%s**%n%w(0,2,2)%+b" --reverse master..HEAD'
+alias prc='pr | pbcopy'
+
+# Rails
 alias rr='rake routes'
 alias rrg='rake routes | grep'
 alias rc='rails console'
