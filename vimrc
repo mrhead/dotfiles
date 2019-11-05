@@ -203,3 +203,6 @@ let g:ruby_path = system('echo $HOME/.rbenv/shims')
 " some features which I use. Setting lazyredraw helps a little bit and it
 " makes scrolling faster.
 set lazyredraw
+
+" make vim-fugitive happy
+set tags^=./.git/tags;
