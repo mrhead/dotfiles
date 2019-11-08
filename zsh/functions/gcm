@@ -1,0 +1,5 @@
+# Change `gcm long message` to `git commit -m "long message"`
+
+gcm() {
+  git commit -m "$*"
+}
