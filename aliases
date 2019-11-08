@@ -43,7 +43,6 @@ alias wh='watch heroku ps'
 
 alias v='vim'
 alias vi='vim'
-# alias powr='touch ~/.pow/restart.txt'
 alias powr='pkill -USR1 puma-dev'
 
 # git
