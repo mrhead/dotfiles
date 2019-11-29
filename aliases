@@ -80,7 +80,7 @@ alias rrg='rake routes | grep'
 alias rc='rails console'
 alias i18n:sort='rake i18n:sort'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
-alias dbr="rake db:seed:replant"
+alias dbr="powr && rake db:reset"
 alias tdl="tail -f log/development.log"
 alias ttl="tail -f log/test.log"
 
