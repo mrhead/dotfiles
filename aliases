@@ -113,3 +113,6 @@ alias mfs="memberful staging"
 
 # Simple web server
 alias ws='python -m SimpleHTTPServer'
+
+# ngrok.io
+alias nt='foreman start -f ngrok.procfile' # ngrok tunnel
