@@ -16,9 +16,10 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias -- -='cd -'
 alias cdm='cd ~/ruby/memberful'
-alias cdwp='cd ~/php/memberful-wp/plugin'
 alias cdr='cd ~/ruby/rails'
+alias cds='cd ~/ruby/shop'
 alias cdt='cd ~/Desktop'
+alias cdwp='cd ~/php/memberful-wp/plugin'
 
 # IP addresses
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
