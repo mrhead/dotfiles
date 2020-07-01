@@ -1,12 +1,26 @@
+snippet th
+	require "test_helper"
+
+snippet tc
+	require "test_helper"
+
+	class ${1}Test < ActiveSupport::TestCase
+		${0}
+	end
+
+snippet t
+	test "${1}" do
+		${0}
+	end
+
+snippet ase
+	assert_equal 
+
+# Obsolete?
+
 snippet mini
 	require 'minitest/autorun'
 	
 	class Tests < MiniTest::Test
 	  ${0}
 	end
-
-snippet th
-	require "test_helper"
-
-snippet ase
-	assert_equal 
