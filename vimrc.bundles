@@ -29,9 +29,8 @@ Plugin 'kana/vim-textobj-user'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'janko-m/vim-test'
+Plugin 'vim-test/vim-test'
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
-Plugin 'evanleck/vim-svelte'
 
 filetype on
