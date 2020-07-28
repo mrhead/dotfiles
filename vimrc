@@ -136,10 +136,6 @@ endif
 " dependency for textobject ruby block
 runtime macros/matchit.vim
 
-" pathogen is needed to automatically execute non vundle plugins (i18n for
-" example)
-execute pathogen#infect()
-
 " make backspace to work as in other apps
 set backspace=indent,eol,start
 
