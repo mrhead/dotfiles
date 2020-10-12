@@ -18,6 +18,7 @@ alias -- -='cd -'
 alias cdm='cd ~/ruby/memberful'
 alias cdr='cd ~/ruby/rails'
 alias cds='cd ~/ruby/shophop'
+alias cdw='cd ~/ruby/webhop'
 alias cdt='cd ~/Desktop'
 alias cdwp='cd ~/php/memberful-wp/plugin'
 
