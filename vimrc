@@ -107,7 +107,7 @@ nnoremap <Leader>a :TestSuite<CR>
 nnoremap <Leader>L :TestVisit<CR>
 
 " Correctly indent p tags
-let g:html_indent_inctags = "p,hgroup,dd"
+let g:html_indent_inctags = "p,hgroup,dd, svg"
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
@@ -121,6 +121,7 @@ nnoremap <C-l> <C-w>l
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
+let g:syntastic_html_tidy_inline_tags = ["svg", "path"]
 
 set hls
 set ignorecase
