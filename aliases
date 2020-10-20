@@ -15,10 +15,11 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias -- -='cd -'
-alias cdm='cd ~/ruby/memberful'
-alias cdr='cd ~/ruby/rails'
-alias cds='cd ~/ruby/shophop'
-alias cdw='cd ~/ruby/webhop'
+alias cdc='cd ~/code'
+alias cdm='cd ~/code/memberful'
+alias cdr='cd ~/code/rails'
+alias cds='cd ~/code/shophop'
+alias cdw='cd ~/code/webhop'
 alias cdt='cd ~/Desktop'
 alias cdwp='cd ~/php/memberful-wp/plugin'
 
@@ -87,10 +88,7 @@ alias ttl="tail -f log/test.log"
 
 alias tmux="tmux -2"
 alias t="tmux"
-alias kill_rspec="ps -ef | grep \"[r]spec\" | grep ruby | awk '{print \$2}' | xargs kill"
 alias grep='grep --color=auto'
-alias dump_db='pg_dump -c `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` > db.dump'
-alias restore_db='psql `rails runner "puts ActiveRecord::Base.connection.current_database" | tail -1` < db.dump'
 
 # Vagrant
 alias vu='vagrant up'
