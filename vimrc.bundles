@@ -32,5 +32,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'vim-test/vim-test'
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
+Plugin 'stefanoverna/vim-i18n'
 
 filetype on
