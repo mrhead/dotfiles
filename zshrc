@@ -64,3 +64,6 @@ stty -ixon
 autoload edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+
+# init memberful CLI
+eval "$(~/code/memberful/cli/bin/memberful init -)"
