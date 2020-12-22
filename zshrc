@@ -67,3 +67,4 @@ bindkey -M vicmd v edit-command-line
 
 # init memberful CLI
 eval "$(~/code/memberful/cli/bin/memberful init -)"
+export PATH="/opt/homebrew/bin:$PATH"
