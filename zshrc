@@ -1,3 +1,5 @@
+export PATH="/opt/homebrew/bin:$PATH"
+
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
@@ -67,4 +69,3 @@ bindkey -M vicmd v edit-command-line
 
 # init memberful CLI
 eval "$(~/code/memberful/cli/bin/memberful init -)"
-export PATH="/opt/homebrew/bin:$PATH"
