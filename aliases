@@ -74,7 +74,7 @@ alias delete_merged_branches='git branch --merged | grep -v "\*" | grep -v -e "m
 alias short='git rev-parse --short '
 
 # Create pull request description based on commit messages.
-alias pr='git log --format="* %h **%s**%n%w(0,2,2)%+b" --reverse master..HEAD'
+alias pr='git log --format="* %h **%s**%n%w(0,2,2)%+b" --reverse main..HEAD'
 alias prc='pr | pbcopy'
 
 # Rails
