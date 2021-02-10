@@ -38,6 +38,7 @@ alias giv="gem install -v"
 
 # Rails
 alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias wds="./bin/webpack-dev-server"
 
 # heroku
 alias hc='heroku run rails console'
