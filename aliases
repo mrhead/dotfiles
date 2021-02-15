@@ -36,10 +36,6 @@ alias b="bundle"
 alias gi="gem install"
 alias giv="gem install -v"
 
-# Rails
-alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias wds="./bin/webpack-dev-server"
-
 # heroku
 alias hc='heroku run rails console'
 alias hrr='heroku run rake'
@@ -79,13 +75,17 @@ alias pr='git log --format="* %h **%s**%n%w(0,2,2)%+b" --reverse main..HEAD'
 alias prc='pr | pbcopy'
 
 # Rails
+alias dbr="powr && DISABLE_SPRING=1 rake db:reset"
+alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias prt="PARALLEL_TESTS=1 rails test"
+alias rc='rails console'
 alias rr='rails routes'
 alias rrg='rails routes | grep'
-alias rc='rails console'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
-alias dbr="powr && DISABLE_SPRING=1 rake db:reset"
 alias tdl="tail -f log/development.log"
 alias ttl="tail -f log/test.log"
+alias wds="./bin/webpack-dev-server"
+
 
 alias tmux="tmux -2"
 alias t="tmux"
