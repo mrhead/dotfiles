@@ -77,7 +77,7 @@ alias prc='pr | pbcopy'
 # Rails
 alias dbr="powr && DISABLE_SPRING=1 rake db:reset"
 alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias prt="PARALLEL_TESTS=1 rails test"
+alias prt="PARALLEL_TESTS=1 bundle exec rails test"
 alias rc='rails console'
 alias rr='rails routes'
 alias rrg='rails routes | grep'
