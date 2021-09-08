@@ -22,6 +22,7 @@
   path = .gitconfig.local
 [init]
   templatedir = ~/.git_template
+	defaultBranch = main
 [merge]
   renamelimit = 2000
 [pager]
