@@ -203,3 +203,6 @@ set lazyredraw
 
 " make vim-fugitive happy
 set tags^=./.git/tags;
+
+" see :h SnipMate-deprecate
+let g:snipMate = { 'snippet_version' : 1 }
