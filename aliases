@@ -92,11 +92,6 @@ alias tmux="tmux -2"
 alias t="tmux"
 alias grep='grep --color=auto'
 
-# Vagrant
-alias vu='vagrant up'
-alias vh='vagrant halt'
-alias vs='vagrant ssh'
-
 # format JSON
 alias json='python -mjson.tool'
 
