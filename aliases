@@ -32,10 +32,6 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 # Bundler
 alias b="bundle"
 
-# Rubygems
-alias gi="gem install"
-alias giv="gem install -v"
-
 # heroku
 alias hc='heroku run rails console'
 alias hrr='heroku run rake'
