@@ -72,3 +72,6 @@ eval "$(~/code/memberful/cli/bin/memberful init -)"
 
 # use brew's Homebrew's OpenSSL
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+# hook https://direnv.net/
+eval "$(direnv hook zsh)"
