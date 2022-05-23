@@ -75,3 +75,5 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 # hook https://direnv.net/
 eval "$(direnv hook zsh)"
+eval "$(rbenv init - zsh)"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
