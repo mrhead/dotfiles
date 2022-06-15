@@ -90,7 +90,7 @@ alias t="tmux"
 alias grep='grep --color=auto'
 
 # format JSON
-alias json='python -mjson.tool'
+alias json='python3 -mjson.tool'
 
 # Perform GET, POST... requests
 # Example: GET google.com
