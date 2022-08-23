@@ -22,6 +22,7 @@ alias cds='cd ~/code/shophop'
 alias cdw='cd ~/code/webhop'
 alias cdt='cd ~/Desktop'
 alias cdwp='cd ~/code/memberful-wp/plugin'
+alias cdanki='~/Library/Application\ Support/Anki2/'
 
 # IP addresses
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
