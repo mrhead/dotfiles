@@ -79,7 +79,7 @@ alias rt="bundle exec rails test"
 alias prt="PARALLEL_WORKERS=8 bundle exec rails test"
 alias rc='rails console'
 alias rr='rails routes'
-alias rrg='rails routes | grep'
+alias rrg='rails routes --grep'
 alias sk='bundle exec sidekiq -C config/sidekiq.yml'
 alias tdl="tail -f log/development.log"
 alias ttl="tail -f log/test.log"
