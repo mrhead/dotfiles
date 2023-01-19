@@ -77,7 +77,6 @@ alias db="rails dbconsole"
 alias dbr="powr && DISABLE_SPRING=1 rake db:reset"
 alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias rt="bundle exec rails test"
-alias prt="PARALLEL_WORKERS=8 bundle exec rails test"
 alias rc='rails console'
 alias rr='rails routes'
 alias rrg='rails routes --grep'
