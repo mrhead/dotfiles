@@ -206,3 +206,6 @@ set tags^=./.git/tags;
 
 " see :h SnipMate-deprecate
 let g:snipMate = { 'snippet_version' : 1 }
+
+" disable mouse support
+set mouse=
