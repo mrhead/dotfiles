@@ -209,3 +209,6 @@ let g:snipMate = { 'snippet_version' : 1 }
 
 " disable mouse support
 set mouse=
+
+" configure Y to work in the same way as in vim
+nnoremap Y yy
