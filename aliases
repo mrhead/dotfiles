@@ -39,7 +39,7 @@ alias hc='heroku run rails console'
 alias hrr='heroku run rake'
 alias wh='watch heroku ps'
 
-alias v='vim'
+alias v='nvim'
 alias vi='vim'
 alias powr='pkill -USR1 puma-dev'
 
