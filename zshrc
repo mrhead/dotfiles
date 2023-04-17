@@ -79,3 +79,5 @@ eval "$(rbenv init - zsh)"
 
 # asdf version manager
 export PATH=~/.asdf/shims:$PATH
+
+source /Users/head/.docker/init-zsh.sh || true # Added by Docker Desktop
