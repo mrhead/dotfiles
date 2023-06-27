@@ -74,7 +74,7 @@ alias prc='pr | pbcopy'
 
 # Rails
 alias db="rails dbconsole"
-alias dbr="powr && DISABLE_SPRING=1 rake db:reset"
+alias dbr="powr && rake db:reset"
 alias m="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias rt="bundle exec rails test"
 alias rst="PARALLEL_WORKERS=4 bundle exec rails test:system"
