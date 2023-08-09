@@ -1,10 +1,16 @@
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+
+# Brew completion
+# https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
-# completion
-autoload -U compinit
+# initialize completion
+autoload -Uz compinit
 compinit
 
 for function in ~/.zsh/functions/*; do
