@@ -87,3 +87,10 @@ eval "$(rbenv init - zsh)"
 export PATH=~/.asdf/shims:$PATH
 
 source /Users/head/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# bun completions
+[ -s "/Users/head/.bun/_bun" ] && source "/Users/head/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
