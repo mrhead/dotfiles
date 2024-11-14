@@ -108,7 +108,7 @@ alias mfp="memberful production"
 alias mfs="memberful staging"
 
 # Simple web server
-alias ws='python -m SimpleHTTPServer'
+alias ws='python3 -m http.server'
 
 # ngrok.io
 alias nt='foreman start -f ngrok.procfile' # ngrok tunnel
