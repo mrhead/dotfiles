@@ -112,3 +112,6 @@ alias ws='python3 -m http.server'
 
 # ngrok.io
 alias nt='foreman start -f ngrok.procfile' # ngrok tunnel
+
+# update anki with audio
+alias anki='cd ~/code/anki-take-2/; ./bin/add_audio.rb; cd -'
