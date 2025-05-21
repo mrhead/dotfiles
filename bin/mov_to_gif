@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Check if an input file is provided
+if [ -z "$1" ]; then
+    echo "Usage: mov_to_gif <input.mov>"
+    exit 1
+fi
+
+# Get filename without extension
+input_file="$1"
+filename=$(basename "$input_file" .mov)
+palette="/tmp/${filename}_palette.png"
+
+# Step 1: Generate an optimized color palette in /tmp
+ffmpeg -i "$input_file" -vf "fps=15,scale=600:-1:flags=lanczos,palettegen" "$palette"
+
+# Step 2: Convert to GIF using the generated palette
+ffmpeg -i "$input_file" -i "$palette" -filter_complex "fps=15,scale=600:-1:flags=lanczos [x]; [x][1:v] paletteuse" -loop 0 "$filename.gif"
+
+# Clean up the palette file
+rm -f "$palette"
+
+echo "✅ Conversion complete: $filename.gif"
