@@ -64,7 +64,6 @@ highlight Folded  guibg=#0A0A0A guifg=#9090D0
 " Numbers
 set number
 set numberwidth=5
-" set relativenumber
 
 " Tab completion
 " will insert tab at beginning of line,
@@ -194,12 +193,6 @@ nnoremap <C-p> :FZF<cr>
 
 " speedup ruby.vim loading
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
-
-" vim 8 scrolling is super slow with `set relativenumber`. At least for Ruby
-" files. It works pretty well on vim 7.4 (default in OS X), but 7.4 is missing
-" some features which I use. Setting lazyredraw helps a little bit and it
-" makes scrolling faster.
-set lazyredraw
 
 " make vim-fugitive happy
 set tags^=./.git/tags;
