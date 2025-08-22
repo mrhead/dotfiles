@@ -206,3 +206,8 @@ set tags^=./.git/tags;
 
 " see :h SnipMate-deprecate
 let g:snipMate = { 'snippet_version' : 1 }
+
+" NERDTree mappings
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
