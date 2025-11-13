@@ -114,3 +114,6 @@ alias nt='foreman start -f ngrok.procfile' # ngrok tunnel
 
 # update anki with audio
 alias anki='cd ~/code/anki-take-2/; ./bin/add_audio.rb; cd -'
+
+# magick
+alias heic_to_jpeg='magick *.HEIC -set filename:base "%[basename]" "%[filename:base].jpg"'
