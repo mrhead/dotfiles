@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Check if an input file is provided
+if [ -z "$1" ]; then
+    echo "Usage: to_mp4 <input_video>"
+    exit 1
+fi
+
+input="$1"
+output="${input%.*}.mp4"
+
+# Convert to MP4 using widely compatible codecs
+ffmpeg -i "$input" -c:v libx264 -c:a aac -strict experimental "$output"
+
+echo "✅ Conversion complete: $output"
