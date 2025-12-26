@@ -1,0 +1,59 @@
+#!/usr/bin/env ruby
+# shift_srt
+#
+# Usage:
+#   shift_srt file.srt -3800
+#
+# Creates a backup: file.srt.bak
+
+if ARGV.length < 2
+  puts "Usage: #{$0} file.srt offset_ms"
+  exit 1
+end
+
+file, offset_ms = ARGV
+offset_ms = offset_ms.to_i
+
+backup = "#{file}.bak"
+
+def shift_timestamp(ts, offset_ms)
+  h, m, s_ms = ts.split(':')
+  s, ms = s_ms.split(',')
+
+  total_ms =
+    h.to_i * 3_600_000 +
+    m.to_i * 60_000 +
+    s.to_i * 1_000 +
+    ms.to_i +
+    offset_ms
+
+  total_ms = 0 if total_ms < 0
+
+  h = total_ms / 3_600_000
+  total_ms %= 3_600_000
+  m = total_ms / 60_000
+  total_ms %= 60_000
+  s = total_ms / 1_000
+  ms = total_ms % 1_000
+
+  format("%02d:%02d:%02d,%03d", h, m, s, ms)
+end
+
+# Backup
+File.write(backup, File.read(file))
+puts "Backup created: #{backup}"
+
+# Process file
+lines = File.readlines(file)
+
+File.open(file, "w") do |out|
+  lines.each do |line|
+    if line =~ /(\d{2}:\d{2}:\d{2},\d{3})\s-->\s(\d{2}:\d{2}:\d{2},\d{3})/
+      out.puts "#{shift_timestamp($1, offset_ms)} --> #{shift_timestamp($2, offset_ms)}"
+    else
+      out.puts line
+    end
+  end
+end
+
+puts "Subtitles shifted by #{offset_ms} ms"
