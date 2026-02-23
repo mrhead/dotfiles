@@ -59,9 +59,6 @@ setopt HIST_IGNORE_SPACE
 # Enable extended globbing
 setopt EXTENDED_GLOB
 
-# setup rbenv
-eval "$(rbenv init -)"
-
 # enable comments in command line
 setopt interactivecomments
 
@@ -76,18 +73,5 @@ bindkey -M vicmd v edit-command-line
 # init memberful CLI
 eval "$(~/code/memberful/cli/bin/memberful init -)"
 
-# hook https://direnv.net/
-eval "$(direnv hook zsh)"
-eval "$(rbenv init - zsh)"
-
-# asdf version manager
-export PATH=~/.asdf/shims:$PATH
-
 source /Users/head/.docker/init-zsh.sh || true # Added by Docker Desktop
-
-# bun completions
-[ -s "/Users/head/.bun/_bun" ] && source "/Users/head/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(/opt/homebrew/bin/mise activate zsh)"
