@@ -2,5 +2,6 @@
 --ignore-dir=tmp
 --ignore-dir=public/packs
 --ignore-dir=public/packs-test
+--ignore-dir=.claude/worktrees
 --ignore-file=is:.byebug_history
 --literal
