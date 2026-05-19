@@ -36,8 +36,8 @@ alias bi="bundle install"
 
 # heroku
 alias hc='heroku run rails console'
-alias hrr='heroku run rake'
-alias wh='watch heroku ps'
+alias hrr='heroku run rails'
+alias wh='NO_COLOR=1 watch heroku ps'
 
 alias v='vim'
 alias vi='vim'
